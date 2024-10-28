@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\bin\Debug\net8.0\ProjectForMonday.exe
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\bin\Debug\net8.0\ProjectForMonday.deps.json
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\bin\Debug\net8.0\ProjectForMonday.runtimeconfig.json
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\bin\Debug\net8.0\ProjectForMonday.dll
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\bin\Debug\net8.0\ProjectForMonday.pdb
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.dll
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\refint\ProjectForMonday.dll
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.pdb
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ProjectForMonday.genruntimeconfig.cache
+C:\Users\User\OneDrive\Desktop\Code.ClassWorks\ProjectForMonday\ProjectForMonday\obj\Debug\net8.0\ref\ProjectForMonday.dll
