@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace ProjectForMonday
 {
     internal class CourseService
     {
-        static Student[] students = new Student[0];
+        static Student[] allStudents = new Student[0];
         static Group[] groups = new Group[0];
         public static void AddGroup(Group group)
         {
@@ -53,15 +54,15 @@ namespace ProjectForMonday
         }
         public static int ChangeNum(int groupNum, int number)
         {
-            for (int i = 0; i < groups.Length; i++)
+            if (CheckNum(groupNum))
             {
-                if (groups[i]._num == groupNum)
-                {
-                    groups[i]._num = number;
-                    return groups[i]._num;
-                }
+                FindGroup(groupNum)._num = number;
+                return FindGroup(groupNum)._num;
             }
-            return 0;
+            else
+            {
+                return 0;
+            }
         }
         public static bool CheckOnline(int num)
         {
@@ -76,25 +77,28 @@ namespace ProjectForMonday
         }
         public static void AddStudent(Student student, Group group)
         {
-            for (int i = 0; i < group.students.Length; i++) 
+            if (group.students.Length < group._limit)
             {
-                if (group.students[i] == null)
-                {
-                    group.students[i] = student;
-                    break;
-                }
+                Array.Resize(ref group.students, group.students.Length + 1);
+                group.students[group.students.Length - 1] = student;
+                Console.WriteLine($"\nStudent Created and added to {group._name}.");
+            }
+            else
+            {
+                Console.Beep();
+                Console.WriteLine("Group is full !");
             }
         }
         public static void AddStudentToAll(Student student)
         {
-            Array.Resize(ref students, students.Length + 1);
-            students[students.Length - 1] = student;
+            Array.Resize(ref allStudents, allStudents.Length + 1);
+            allStudents[allStudents.Length - 1] = student;
         }
         public static void ShowAllStudents()
         {
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 0; i < allStudents.Length; i++)
             {
-                Console.WriteLine($"Name : {students[i]._name}, Surname : {students[i]._surname}, Group name : {students[i]._groupName}, Is guaranteed ? {students[i]._type}.");
+                Console.WriteLine($"Name : {allStudents[i]._name}, Surname : {allStudents[i]._surname}, Group name : {allStudents[i]._groupName}, Is guaranteed ? {allStudents[i]._type}.");
             }
         }
         public static void ShowStudents(Group group)
@@ -119,22 +123,22 @@ namespace ProjectForMonday
         {
             Student[] newArr = new Student[0];
 
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 0; i < allStudents.Length; i++)
             {
-                if (students[i]._surname != surname)
+                if (allStudents[i]._surname != surname)
                 {
                     Array.Resize(ref newArr, newArr.Length + 1);
-                    newArr[newArr.Length - 1] = students[i];
+                    newArr[newArr.Length - 1] = allStudents[i];
                 }
             }
-            students = newArr;
-            return students;
+            allStudents = newArr;
+            return allStudents;
         }
         public static bool CheckStudent(string surname)
         {
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 0; i < allStudents.Length; i++)
             {
-                if (students[i]._surname == surname)
+                if (allStudents[i]._surname == surname)
                 {
                     return true;
                 }
@@ -145,16 +149,35 @@ namespace ProjectForMonday
         {
             Student[] newArr = new Student[0];
 
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 0; i < allStudents.Length; i++)
             {
-                if (students[i]._groupNo != groupNum)
+                if (allStudents[i]._groupNo != groupNum)
                 {
                     Array.Resize(ref newArr, newArr.Length + 1);
-                    newArr[newArr.Length - 1] = students[i];
+                    newArr[newArr.Length - 1] = allStudents[i];
                 }
             }
-            students = newArr;
-            return students;
+            allStudents = newArr;
+            return allStudents;
+        }
+        public static bool CheckName(string name)
+        {
+            if (name.Length < 3 || name.Length > 25)
+            {
+                return false;
+            }
+            for (int i = 0; i < name.Length; i++) 
+            {
+                if (char.IsLetter(name[i]) == false)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static string Capitalise(string name)
+        {
+            return name.Substring(0, 1).ToUpper() + name.Substring(1).ToLower();
         }
     }
 }

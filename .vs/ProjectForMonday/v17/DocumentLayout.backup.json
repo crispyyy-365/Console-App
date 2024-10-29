@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.classworks\\projectformonday\\projectformonday\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.homeworks\\projectformonday\\projectformonday\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.classworks\\projectformonday\\projectformonday\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.homeworks\\projectformonday\\projectformonday\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.homeworks\\projectformonday\\projectformonday\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.classworks\\projectformonday\\projectformonday\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.classworks\\projectformonday\\projectformonday\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.homeworks\\projectformonday\\projectformonday\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\group.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.classworks\\projectformonday\\projectformonday\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|c:\\users\\user\\onedrive\\desktop\\code.homeworks\\projectformonday\\projectformonday\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2536BCE4-0BA4-43EE-AAD2-6A8FE59759A7}|ProjectForMonday\\ProjectForMonday.csproj|solutionrelative:projectformonday\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,11 +42,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Category.cs",
               "RelativeDocumentMoniker": "ProjectForMonday\\Category.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Category.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Category.cs",
               "RelativeToolTip": "ProjectForMonday\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -54,52 +54,49 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CourseService.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\CourseService.cs",
               "RelativeDocumentMoniker": "ProjectForMonday\\CourseService.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\CourseService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\CourseService.cs",
               "RelativeToolTip": "ProjectForMonday\\CourseService.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAuwCkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwEAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T11:10:41.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T11:10:41.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Student.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Student.cs",
               "RelativeDocumentMoniker": "ProjectForMonday\\Student.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Student.cs*",
-              "RelativeToolTip": "ProjectForMonday\\Student.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Student.cs",
+              "RelativeToolTip": "ProjectForMonday\\Student.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T11:06:52.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T11:06:52.296Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Group.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Group.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Group.cs",
               "RelativeDocumentMoniker": "ProjectForMonday\\Group.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Group.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Group.cs",
               "RelativeToolTip": "ProjectForMonday\\Group.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T11:06:12.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T11:06:12.819Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Program.cs",
               "RelativeDocumentMoniker": "ProjectForMonday\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Code.ClassWorks\\ProjectForMonday\\ProjectForMonday\\Program.cs*",
-              "RelativeToolTip": "ProjectForMonday\\Program.cs*",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAgwKMAAABIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\code.homeworks\\ProjectForMonday\\ProjectForMonday\\Program.cs",
+              "RelativeToolTip": "ProjectForMonday\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAHAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-26T20:39:43.03Z",
               "EditorCaption": ""

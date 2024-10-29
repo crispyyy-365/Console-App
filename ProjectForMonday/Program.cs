@@ -1,4 +1,6 @@
 ﻿using System.Transactions;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProjectForMonday
@@ -24,7 +26,7 @@ namespace ProjectForMonday
                             Console.WriteLine("\nEnter the number of the group : \n");
                             group._num = Convert.ToInt32(Console.ReadLine());
 
-                            if (group._num > 99 && group._num < 1000) 
+                            if (group._num > 99 && group._num < 1000)
                             {
                                 if (CourseService.CheckNum(group._num) == false)
                                 {
@@ -60,13 +62,11 @@ namespace ProjectForMonday
                                         break;
                                     case (int)Category.Design:
                                         group._category = Category.Design;
-                                        group._name = $"C-{group._num}";
+                                        group._name = $"D-{group._num}";
                                         break;
                                     case (int)Category.SystemAdminstration:
                                         group._category = Category.SystemAdminstration;
                                         group._name = $"SA-{group._num}";
-                                        break;
-                                    case 0:
                                         break;
                                     default:
                                         Console.Beep();
@@ -89,20 +89,20 @@ namespace ProjectForMonday
                             Console.WriteLine("\nIs the group online ?\n\n1.Yes\n2.No\n");
                             choice1 = Console.ReadLine().Trim();
 
-                            switch(choice1)
+                            switch (choice1)
                             {
                                 case "1":
                                     group._isOnline = true;
-                                    Group._limit = 10;
+                                    group._limit = 10;
                                     break;
                                 case "2":
                                     group._isOnline = false;
-                                    Group._limit = 15;
+                                    group._limit = 15;                               
                                     break;
                                 case "0":
                                     break;
                                 default:
-                                    Console.Beep() ;
+                                    Console.Beep();
                                     Console.WriteLine("\nInvalid option !\n");
                                     break;
                             }
@@ -110,6 +110,7 @@ namespace ProjectForMonday
                         while (choice1 != "1" && choice1 != "2");
 
                         CourseService.AddGroup(group);
+                        Console.WriteLine("\nGroup created.");
                         break;
                     case "2":
                         Console.WriteLine("\nList of all the groups :\n");
@@ -127,6 +128,12 @@ namespace ProjectForMonday
                             Console.WriteLine("\nEnter the number of the group :\n");
                             changing = Convert.ToInt32(Console.ReadLine());
 
+                            if (CourseService.CheckNum(changing))
+                            {
+                                Console.Beep();
+                                Console.WriteLine("\nThe group does not exist !\n");
+                            }
+
                             Console.WriteLine("\nEnter the new number : \n");
                             changed = Convert.ToInt32(Console.ReadLine());
 
@@ -142,34 +149,34 @@ namespace ProjectForMonday
                                 break;
                             }
                         }
-                        while (CourseService.CheckNum(changed) == false);
+                        while (CourseService.CheckNum(changing) || CourseService.CheckNum(changed) == false);
                         break;
                     case "4":
                         Student student = new Student();
                         do
                         {
                             Console.WriteLine("\nEnter the name of the student : \n");
-                            student._name = Console.ReadLine().Trim();
+                            student._name = CourseService.Capitalise(Console.ReadLine().Trim());
 
-                            if (student._name.Length < 3 || student._name.Length > 25)
+                            if (CourseService.CheckName(student._name) == false)
                             {
                                 Console.Beep();
                                 Console.WriteLine("\nThe name is invalid, it should be between 3 and 25 letters.\n");
                             }
                         }
-                        while (student._name.Length < 3 || student._name.Length > 25);
+                        while (CourseService.CheckName(student._name) == false);
                         do
                         {
                             Console.WriteLine("\nEnter the Surname :\n");
-                            student._surname = Console.ReadLine().Trim();
+                            student._surname = CourseService.Capitalise(Console.ReadLine().Trim());
 
-                            if (student._surname.Length < 3 || student._surname.Length > 25)
+                            if (CourseService.CheckName(student._surname) == false)
                             {
                                 Console.Beep();
                                 Console.WriteLine("\nThe surname is invalid, it should be between 3 and 25 letters.\n");
                             }
                         }
-                        while (student._surname.Length < 3 || student._surname.Length > 25);
+                        while (CourseService.CheckName(student._surname) == false);
 
                         string gurantee;
 
@@ -207,7 +214,6 @@ namespace ProjectForMonday
                             {
                                 CourseService.AddStudent(student, CourseService.FindGroup(student._groupNo));
                                 student._groupName = CourseService.FindGroup(student._groupNo)._name;
-                                Console.WriteLine($"\nStudent is created and added to {student._groupName} group.\n");
                             }
                         }
                         while (CourseService.CheckNum(student._groupNo));
@@ -238,7 +244,9 @@ namespace ProjectForMonday
                         while (CourseService.CheckNum(groupNo));
                         break;
                     case "7":
+
                         int number;
+
                         do
                         {
                             Console.WriteLine("\nType the number of the group :\n");
@@ -253,12 +261,15 @@ namespace ProjectForMonday
                             {
                                 CourseService.RemoveGroup(number);
                                 Console.WriteLine("\nGroup deleted.\n");
+                                break;
                             }
                         }
                         while (CourseService.CheckNum(number));
                         break;
                     case "8":
+
                         string surname;
+
                         do
                         {
                             Console.WriteLine("\nType the surname of the student : \n");
